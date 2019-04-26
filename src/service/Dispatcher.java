@@ -8,6 +8,7 @@ import java.util.concurrent.PriorityBlockingQueue;
 
 public class Dispatcher {
     private PriorityBlockingQueue<Empleado> empleados;
+    private static final Integer MAX_THREADS = 10000;
 
 
     public Dispatcher(PriorityBlockingQueue<Empleado> empleados) {
@@ -18,7 +19,7 @@ public class Dispatcher {
 
         for(int i = 0; i < call; i++) {
             Empleado empleado;
-            ExecutorService pool = Executors.newFixedThreadPool(10);
+            ExecutorService pool = Executors.newFixedThreadPool(MAX_THREADS);
 
             try {
                 empleado = empleados.take();
