@@ -8,6 +8,10 @@ import java.util.concurrent.PriorityBlockingQueue;
 
 public class Main {
 
+    public static void main() throws Exception {
+        process();
+    }
+
     public static void process() throws InterruptedException {
         PriorityBlockingQueue<Empleado> empleados = new PriorityBlockingQueue<>();
 
