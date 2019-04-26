@@ -28,7 +28,10 @@ public class Main {
 
         Dispatcher d = new Dispatcher(empleados);
 
-        d.dispatchCall(10);
+        for(int i = 0; i < 5; i++) {
+            int callNumber = 1557234561 + i;
+            d.dispatchCall(callNumber);
+        }
 
     }
 }
