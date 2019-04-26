@@ -19,7 +19,7 @@ public class CallEnding implements Runnable {
         try {
             Thread.sleep(10000);
             empleados.add(e);
-            System.out.println("El empleado " + e.getName() + " esta disponible nuevamente");
+            System.out.println("El empleado " + e.getName() + " esta disponible nuevamente.");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
